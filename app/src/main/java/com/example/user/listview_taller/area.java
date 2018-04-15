@@ -23,11 +23,11 @@ public class area extends AppCompatActivity {
                         startActivity(n);
                         break;
                     case 1:
-                        Intent nn = new Intent(area.this,triangulo.class);
+                        Intent nn = new Intent(area.this,rectangulo.class);
                         startActivity(nn);
                         break;
                     case 2:
-                        Intent nnn = new Intent(area.this,rectangulo.class);
+                        Intent nnn = new Intent(area.this,triangulo.class);
                         startActivity(nnn);
                         break;
                     case 3:

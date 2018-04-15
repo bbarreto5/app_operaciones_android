@@ -2,12 +2,30 @@ package com.example.user.listview_taller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class rectangulo extends AppCompatActivity {
-
+    EditText altura,base;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rectangulo);
+        altura = findViewById(R.id.txtaltura);
+        base =findViewById(R.id.txtbase);
+    }
+    public void calcular(View v){
+        double b = Double.parseDouble(base.getText().toString());
+        double a =Double.parseDouble(altura.getText().toString());
+        double resultado = new metodos().area_rectangulo(b,a);
+        resultados p = new resultados("Area de un rectangulo","Base:" +b +", altura"+a,resultado);
+        p.guarda();
+        Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+    }
+
+    public void borrar(View v){
+        altura.setText("");
+        base.setText("");
     }
 }
