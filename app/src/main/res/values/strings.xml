@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">listview_taller</string>
+    <string name="op1">Areas</string>
+    <string name="op2">Volúmenes</string>
+    <string name="op3">Operaciones Realizadas</string>
+    <array name="opciones">
+        <item>@string/op1</item>
+        <item>@string/op2</item>
+        <item>@string/op3</item>
+    </array>
+    <string name="ar1">Cuadraro</string>
+    <string name="ar2">Rectángulo</string>
+    <string name="ar3">Triángulo</string>
+    <string name="ar4">Círculo</string>
+    <array name="areas">
+        <item>@string/ar1</item>
+        <item>@string/ar2</item>
+        <item>@string/ar3</item>
+        <item>@string/ar4</item>
+    </array>
+    <string name="vol1">Esfera</string>
+    <string name="vol2">Cilindro</string>
+    <string name="vol3">Cono</string>
+    <string name="vol4">Cubo</string>
+    <array name="volumenes">
+        <item>@string/vol1</item>
+        <item>@string/vol2</item>
+        <item>@string/vol3</item>
+        <item>@string/vol4</item>
+    </array>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="area_cuadrado">Lado:</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+    <string name="base">Base:</string>
+    <string name="altura">Altura:</string>
+    <string name="rectangulo">Rectángulo</string>
+    <string name="triangulo">Triángulo</string>
+    <string name="circulo">Círculo</string>
+    <string name="radio">Radio:</string>
+    <string name="esfera">Esfera</string>
+    <string name="cilindro">Cilindro</string>
+    <string name="cono">Cono</string>
+    <string name="arista">Arista:</string>
+    <string name="cubo">cubo</string>
+    <string name="realizadas">REALIZADAS</string>
+    <string name="numero">No.</string>
+    <string name="operacion">Operacíon</string>
+    <string name="datos">datos</string>
+    <string name="resultado">Resultado</string>
+</resources>
