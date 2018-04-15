@@ -1,5 +1,10 @@
 package com.example.user.listview_taller;
 
+import android.content.res.Resources;
+import android.widget.EditText;
+
+import java.util.ArrayList;
+
 /**
  * Created by User on 15/04/2018.
  */
@@ -28,5 +33,20 @@ public class metodos {
     }
     public double volumen_cubo(double arista){
         return Math.pow(arista,3);
+    }
+    public boolean validar(ArrayList<EditText> n,String m1, String m2){
+        for (int i = 0; i < n.size(); i++) {
+            if(n.get(i).getText().toString().equals("")){
+                n.get(i).setError(m1);
+                return false;
+            }else{
+                double numero= Double.parseDouble(n.get(i).getText().toString());
+                if(numero<=0.0 || numero <= 0){
+                    n.get(i).setError(m2);
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }

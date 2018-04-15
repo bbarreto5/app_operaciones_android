@@ -48,4 +48,6 @@
     <string name="operacion">Operacíon</string>
     <string name="datos">datos</string>
     <string name="resultado">Resultado</string>
+    <string name="error1">Dijite un numero</string>
+    <string name="error2">Dijite un numero mayor a cero</string>
 </resources>

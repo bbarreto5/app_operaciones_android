@@ -6,21 +6,26 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class cuadrado extends AppCompatActivity {
     EditText lado;
+    ArrayList<EditText> red = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuadrado);
         lado=findViewById(R.id.txtlados);
+        red.add(lado);
     }
     public void calcular(View v){
-
-        double l =Double.parseDouble(lado.getText().toString());
-        double resultado = new metodos().area_cuadrado(l);
-        resultados p = new resultados("Area de un cuadrado","Lados:" +l,resultado);
-        p.guarda();
-        Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+        if(new metodos().validar(red,getString(R.string.error1),getString(R.string.error2))){
+            double l =Double.parseDouble(lado.getText().toString());
+            double resultado = new metodos().area_cuadrado(l);
+            resultados p = new resultados("Area de un cuadrado","Lados:" +l,resultado);
+            p.guarda();
+            Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void borrar(View v){
