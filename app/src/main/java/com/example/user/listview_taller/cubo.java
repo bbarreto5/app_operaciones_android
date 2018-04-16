@@ -22,9 +22,9 @@ public class cubo extends AppCompatActivity {
         if(new metodos().validar(red,getString(R.string.error1),getString(R.string.error2))){
             double r =Double.parseDouble(arista.getText().toString());
             double resultado = new metodos().volumen_cubo(r);
-            resultados p = new resultados("Volumen de un cubo","Volumen:" +r,resultado);
+            resultados p = new resultados(getString(R.string.v_cubo),getString(R.string.arista) +r,resultado);
             p.guarda();
-            Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.resultado)+": "+resultado, Toast.LENGTH_SHORT).show();
         }
     }
 

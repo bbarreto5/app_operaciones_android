@@ -25,9 +25,10 @@ public class rectangulo extends AppCompatActivity {
             double b = Double.parseDouble(base.getText().toString());
             double a =Double.parseDouble(altura.getText().toString());
             double resultado = new metodos().area_rectangulo(b,a);
-            resultados p = new resultados("Area de un rectangulo","Base:" +b +", altura"+a,resultado);
+            resultados p = new resultados(getString(R.string.a_rectangulo),
+                    getString(R.string.base)+b +", "+getString(R.string.altura)+a,resultado);
             p.guarda();
-            Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.resultado)+": "+resultado, Toast.LENGTH_SHORT).show();
         }
     }
 

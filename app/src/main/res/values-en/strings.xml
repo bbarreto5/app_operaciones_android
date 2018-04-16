@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">listview taller</string>
+    <string name="cuadrado">Square</string>
+    <string name="area_cuadrado">"Side:"</string>
+    <string name="calcular">"Calculate"</string>
+    <string name="borrar">"Delete"</string>
+    <string name="base">"Base:"</string>
+    <string name="altura">"Height:"</string>
+    <string name="rectangulo">"Rectangle"</string>
+    <string name="circulo">"Circle"</string>
+    <string name="triangulo">"Triangle"</string>
+    <string name="radio">"Radio:"</string>
+    <string name="esfera">"Sphere"</string>
+    <string name="cilindro">"Cylinder"</string>
+    <string name="cono">"Cone"</string>
+    <string name="arista">"Edge:"</string>
+    <string name="cubo">"Cube"</string>
+    <string name="realizadas">"REALIZED"</string>
+    <string name="numero">No.</string>
+    <string name="operacion">Operation</string>
+    <string name="datos">data</string>
+    <string name="resultado">Result</string>
+    <string name="error1">Say a number</string>
+    <string name="error2">Enter a number greater than zero</string>
+    <string name="v_cilindro">Volume of a cylinder</string>
+    <string name="a_circulo">Area of ​​a circle</string>
+    <string name="a_triangulo">Area of ​​a triangle</string>
+    <string name="v_cono">Volume of a cone</string>
+    <string name="a_cuadrado">Area of ​​a square</string>
+    <string name="v_cubo">Volume of a cube</string>
+    <string name="v_esfera">Volume of a sphere</string>
+    <string name="a_rectangulo">Area of ​​rectangle</string>
+    <string name="op1">Areas</string>
+    <string name="op2">Volumes</string>
+    <string name="op3">Operations carried out</string>
+</resources>

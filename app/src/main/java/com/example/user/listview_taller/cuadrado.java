@@ -22,9 +22,10 @@ public class cuadrado extends AppCompatActivity {
         if(new metodos().validar(red,getString(R.string.error1),getString(R.string.error2))){
             double l =Double.parseDouble(lado.getText().toString());
             double resultado = new metodos().area_cuadrado(l);
-            resultados p = new resultados("Area de un cuadrado","Lados:" +l,resultado);
+            resultados p = new resultados(getString(R.string.a_cuadrado),
+                    getString(R.string.area_cuadrado) +l,resultado);
             p.guarda();
-            Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.resultado)+": "+resultado, Toast.LENGTH_SHORT).show();
         }
     }
 

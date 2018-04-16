@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">listview_taller</string>
-    <string name="op1">Areas</string>
+    <string name="app_name">listview taller</string>
+    <string name="op1">Áreas</string>
     <string name="op2">Volúmenes</string>
     <string name="op3">Operaciones Realizadas</string>
     <array name="opciones">
@@ -8,25 +8,17 @@
         <item>@string/op2</item>
         <item>@string/op3</item>
     </array>
-    <string name="ar1">Cuadraro</string>
-    <string name="ar2">Rectángulo</string>
-    <string name="ar3">Triángulo</string>
-    <string name="ar4">Círculo</string>
-    <array name="areas">
-        <item>@string/ar1</item>
-        <item>@string/ar2</item>
-        <item>@string/ar3</item>
-        <item>@string/ar4</item>
-    </array>
-    <string name="vol1">Esfera</string>
-    <string name="vol2">Cilindro</string>
-    <string name="vol3">Cono</string>
-    <string name="vol4">Cubo</string>
     <array name="volumenes">
-        <item>@string/vol1</item>
-        <item>@string/vol2</item>
-        <item>@string/vol3</item>
-        <item>@string/vol4</item>
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
+    </array>
+    <array name="areas">
+        <item>@string/cuadrado</item>
+        <item>@string/rectangulo</item>
+        <item>@string/triangulo</item>
+        <item>@string/circulo</item>
     </array>
     <string name="cuadrado">Cuadrado</string>
     <string name="area_cuadrado">Lado:</string>
@@ -50,4 +42,12 @@
     <string name="resultado">Resultado</string>
     <string name="error1">Dijite un numero</string>
     <string name="error2">Dijite un numero mayor a cero</string>
+    <string name="v_cilindro">Volumen de un cilindro</string>
+    <string name="a_circulo">Area de un circulo</string>
+    <string name="a_triangulo">Area de un triangulo</string>
+    <string name="v_cono">Volumen de un cono"</string>
+    <string name="a_cuadrado">Area de un cuadrado</string>
+    <string name="v_cubo">Volumen de un cubo</string>
+    <string name="v_esfera">Volumen de una esfera</string>
+    <string name="a_rectangulo">Area de un rectangulo</string>
 </resources>

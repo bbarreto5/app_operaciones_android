@@ -22,9 +22,10 @@ public class circulo extends AppCompatActivity {
         if(new metodos().validar(red,getString(R.string.error1),getString(R.string.error2))){
             double r =Double.parseDouble(radio.getText().toString());
             double resultado = new metodos().area_circulo(r);
-            resultados p = new resultados("Area de un circulo","Radio:" +r,resultado);
+            resultados p = new resultados(getString(R.string.a_circulo),
+                    getString(R.string.radio) +r,resultado);
             p.guarda();
-            Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.resultado)+": "+resultado, Toast.LENGTH_SHORT).show();
         }
     }
 

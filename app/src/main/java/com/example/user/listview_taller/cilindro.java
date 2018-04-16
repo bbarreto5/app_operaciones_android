@@ -25,9 +25,11 @@ public class cilindro extends AppCompatActivity {
             double b = Double.parseDouble(altura.getText().toString());
             double a =Double.parseDouble(radio.getText().toString());
             double resultado = new metodos().volumen_cilindro(a,b);
-            resultados p = new resultados("Volumen de un cilindro","Radio:" +a +", altura:"+b,resultado);
+            resultados p = new resultados(getString(R.string.v_cilindro),
+                    getString(R.string.radio)+a +", "+getString(R.string.altura)+b,resultado);
             p.guarda();
-            Toast.makeText(getApplicationContext(), "Resultado: "+resultado, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.resultado)+": "+resultado,
+                    Toast.LENGTH_SHORT).show();
         }
     }
 
